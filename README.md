@@ -1,4 +1,5 @@
-# Microbial-community-growth-rate
+# Microbial Community Growth Rate
+
 MOFA: Microbial Optimization without Forced Altruism
 
 First, use Community_Growth_Rate to construct a merged metabolic network for the community. The S file, which is the Excel output of the community model, is then used in Python to compute the community growth rate.
