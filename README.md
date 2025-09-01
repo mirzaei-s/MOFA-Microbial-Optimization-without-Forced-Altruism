@@ -26,7 +26,7 @@ Run the provided `.ipynb` file and use the **S file** (Excel output) as input to
 
 
   
-## NECom Implementation
+**NECom Implementation**
 
 1. Use the `Create_Necom_Model.m` function to generate the stoichiometric matrix for each species, ensuring compatibility with the NECom framework.
 
