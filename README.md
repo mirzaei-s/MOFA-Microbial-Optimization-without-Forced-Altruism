@@ -16,8 +16,7 @@ The S file is the Excel output representing the merged metabolic network of the 
 
 Run the provided `.ipynb` file and use the **S file** (Excel output) as input to compute the community growth rate.  
 
-- For the toy model, the notebook is located in the `toymodel` folder:  
-  `NoFA_Opt_&_NECom_(Toymodel).ipynb` with the file `S_toymodel.xlsx`.
+- For the toy model, the notebook is located in the `toymodel` folder: run `NoFA_Opt_&_NECom_(Toymodel).ipynb` with the file `S_toymodel.xlsx`.
 - For *Desulfovibrio vulgaris* and *Methanococcus maripaludis* species, see the `DV-MM` folder and run `MOFA_for_DV&MM.ipynb` with the file `S_DV_MM.xlsx`.
 - For gut microbiome species, the Python code `MOFA-Gut-Microbiome.py` uses `S_human.xlsx` located in the zipped folder.
 
