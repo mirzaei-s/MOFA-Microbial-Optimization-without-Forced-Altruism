@@ -1,6 +1,6 @@
-# Microbial Community Growth Rate
+# MOFA: Microbial Optimization without Forced Altruism 
+ Microbial Community Growth Rate
 
-MOFA: Microbial Optimization without Forced Altruism
 
 ### Step 1: Construct the community metabolic network
 
@@ -16,10 +16,15 @@ The S file is the Excel output representing the merged metabolic network of the 
 
 Run the provided `.ipynb` file and use the **S file** (Excel output) as input to compute the community growth rate.  
 
-- For the toy model, the notebook is located in `toymodel` file:  `NoFA_Opt_&_NECom_(Toymodel).ipynb`
-- For *Desulfovibrio vulgaris* and *Methanococcus maripaludis* species, see the `DV-MM` file.
-- For gut microbiome species, the Python code is in the `gut microbiome` folder.
-- 
-For NECom implementation, use the CreateNECom function to generate the stoichiometric matrix for each species, ensuring compatibility with the NECom framework.
+- For the toy model, the notebook is located in the `toymodel` folder:  
+  `NoFA_Opt_&_NECom_(Toymodel).ipynb` with the file `S_toymodel.xlsx`.
+- For *Desulfovibrio vulgaris* and *Methanococcus maripaludis* species, see the `DV-MM` folder and run `MOFA_for_DV&MM.ipynb` with the file `S_DV_MM.xlsx`.
+- For gut microbiome species, the Python code `MOFA-Gut-Microbiome.py` uses `S_human.xlsx` located in the zipped folder.
+
+
+  
+For NECom implementation, use the `Create_Necom_Model.m` function to generate the stoichiometric matrix for each species, ensuring compatibility with the NECom framework.
+ use the excel file to run NECom_DV&MM.ipynb
+
 
 For each pair of species in our study, we placed the corresponding S (stoichiometric) Excel file in their respective folders, updated the file path in the read_excel function, and then ran the method’s function.
