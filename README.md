@@ -1,6 +1,5 @@
 # MOFA: Microbial Optimization without Forced Altruism 
- Microbial Community Growth Rate
-
+A nonlinear programming method for analyzing microbial community-level growth rate without enforced altruism.
 
 ### Step 1: Construct the community metabolic network
 
