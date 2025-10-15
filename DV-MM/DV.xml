@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" xmlns:groups="http://www.sbml.org/sbml/level3/version1/groups/version1" level="3" version="1" fbc:required="false" groups:required="false">
+  <model metaid="DV.xml" id="COBRAModel" name="Model Exported from COBRA Toolbox" fbc:strict="true">
+    <listOfUnitDefinitions>
+      <unitDefinition id="mmol_per_gDW_per_hr">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment metaid="c" id="c" name="Cytoplasm" constant="false"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="M_H__40__e__41____91__c__93__" id="M_H__40__e__41____91__c__93__" name="M_H__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_APS__91__c__93__" id="M_APS__91__c__93__" name="M_APS" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_ATP__91__c__93__" id="M_ATP__91__c__93__" name="M_ATP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_SO4__91__c__93__" id="M_SO4__91__c__93__" name="M_SO4" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Cyt__45__C_red__91__c__93__" id="M_Cyt__45__C_red__91__c__93__" name="M_Cyt__45__C_red" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_SO3__91__c__93__" id="M_SO3__91__c__93__" name="M_SO3" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_AMP__91__c__93__" id="M_AMP__91__c__93__" name="M_AMP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Cyt__45__C_ox__91__c__93__" id="M_Cyt__45__C_ox__91__c__93__" name="M_Cyt__45__C_ox" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_H2__91__c__93__" id="M_H2__91__c__93__" name="M_H2" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Fdx_ox__91__c__93__" id="M_Fdx_ox__91__c__93__" name="M_Fdx_ox" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Fdx_red__91__c__93__" id="M_Fdx_red__91__c__93__" name="M_Fdx_red" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_H2S__91__c__93__" id="M_H2S__91__c__93__" name="M_H2S" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Q__91__c__93__" id="M_Q__91__c__93__" name="M_Q" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_QH2__91__c__93__" id="M_QH2__91__c__93__" name="M_QH2" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_NADH__91__c__93__" id="M_NADH__91__c__93__" name="M_NADH" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_NAD__91__c__93__" id="M_NAD__91__c__93__" name="M_NAD" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_ADP__91__c__93__" id="M_ADP__91__c__93__" name="M_ADP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Pyr__91__c__93__" id="M_Pyr__91__c__93__" name="M_Pyr" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Lac__91__c__93__" id="M_Lac__91__c__93__" name="M_Lac" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_AcCoA__91__c__93__" id="M_AcCoA__91__c__93__" name="M_AcCoA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_CO2__91__c__93__" id="M_CO2__91__c__93__" name="M_CO2" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_CoA__91__c__93__" id="M_CoA__91__c__93__" name="M_CoA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_F6P__91__c__93__" id="M_F6P__91__c__93__" name="M_F6P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_G6P__91__c__93__" id="M_G6P__91__c__93__" name="M_G6P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_6PGL__91__c__93__" id="M_6PGL__91__c__93__" name="M_6PGL" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_NADP__91__c__93__" id="M_NADP__91__c__93__" name="M_NADP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_NADPH__91__c__93__" id="M_NADPH__91__c__93__" name="M_NADPH" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_FBP__91__c__93__" id="M_FBP__91__c__93__" name="M_FBP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_GAP__91__c__93__" id="M_GAP__91__c__93__" name="M_GAP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_R5P__91__c__93__" id="M_R5P__91__c__93__" name="M_R5P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_X5P__91__c__93__" id="M_X5P__91__c__93__" name="M_X5P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Sed7P__91__c__93__" id="M_Sed7P__91__c__93__" name="M_Sed7P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_E4P__91__c__93__" id="M_E4P__91__c__93__" name="M_E4P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Ribu5P__91__c__93__" id="M_Ribu5P__91__c__93__" name="M_Ribu5P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_3PG__91__c__93__" id="M_3PG__91__c__93__" name="M_3PG" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_PEP__91__c__93__" id="M_PEP__91__c__93__" name="M_PEP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_OAA__91__c__93__" id="M_OAA__91__c__93__" name="M_OAA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_AcP__91__c__93__" id="M_AcP__91__c__93__" name="M_AcP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_AcOH__91__c__93__" id="M_AcOH__91__c__93__" name="M_AcOH" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Cit__91__c__93__" id="M_Cit__91__c__93__" name="M_Cit" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Isocit__91__c__93__" id="M_Isocit__91__c__93__" name="M_Isocit" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_aKG__91__c__93__" id="M_aKG__91__c__93__" name="M_aKG" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_SucCoA__91__c__93__" id="M_SucCoA__91__c__93__" name="M_SucCoA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Suc__91__c__93__" id="M_Suc__91__c__93__" name="M_Suc" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_FADH__91__c__93__" id="M_FADH__91__c__93__" name="M_FADH" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_FAD__91__c__93__" id="M_FAD__91__c__93__" name="M_FAD" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Fum__91__c__93__" id="M_Fum__91__c__93__" name="M_Fum" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Mal__91__c__93__" id="M_Mal__91__c__93__" name="M_Mal" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Glu__91__c__93__" id="M_Glu__91__c__93__" name="M_Glu" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_NH3__91__c__93__" id="M_NH3__91__c__93__" name="M_NH3" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Gln__91__c__93__" id="M_Gln__91__c__93__" name="M_Gln" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Asp__91__c__93__" id="M_Asp__91__c__93__" name="M_Asp" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Asn__91__c__93__" id="M_Asn__91__c__93__" name="M_Asn" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_ASA__91__c__93__" id="M_ASA__91__c__93__" name="M_ASA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_DDP__91__c__93__" id="M_DDP__91__c__93__" name="M_DDP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_THDP__91__c__93__" id="M_THDP__91__c__93__" name="M_THDP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_SDAP__91__c__93__" id="M_SDAP__91__c__93__" name="M_SDAP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_mDAP__91__c__93__" id="M_mDAP__91__c__93__" name="M_mDAP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Lys__91__c__93__" id="M_Lys__91__c__93__" name="M_Lys" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Pro__91__c__93__" id="M_Pro__91__c__93__" name="M_Pro" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Arg__91__c__93__" id="M_Arg__91__c__93__" name="M_Arg" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Hse__91__c__93__" id="M_Hse__91__c__93__" name="M_Hse" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Thr__91__c__93__" id="M_Thr__91__c__93__" name="M_Thr" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Ile__91__c__93__" id="M_Ile__91__c__93__" name="M_Ile" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_H4F__91__c__93__" id="M_H4F__91__c__93__" name="M_H4F" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_methylene__45__H4F__91__c__93__" id="M_methylene__45__H4F__91__c__93__" name="M_methylene__45__H4F" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Ser__91__c__93__" id="M_Ser__91__c__93__" name="M_Ser" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Gly__91__c__93__" id="M_Gly__91__c__93__" name="M_Gly" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Form__91__c__93__" id="M_Form__91__c__93__" name="M_Form" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_SKA__91__c__93__" id="M_SKA__91__c__93__" name="M_SKA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_CHR__91__c__93__" id="M_CHR__91__c__93__" name="M_CHR" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_PPA__91__c__93__" id="M_PPA__91__c__93__" name="M_PPA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Tyr__91__c__93__" id="M_Tyr__91__c__93__" name="M_Tyr" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Phe__91__c__93__" id="M_Phe__91__c__93__" name="M_Phe" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Ind__91__c__93__" id="M_Ind__91__c__93__" name="M_Ind" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Trp__91__c__93__" id="M_Trp__91__c__93__" name="M_Trp" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_ALC__91__c__93__" id="M_ALC__91__c__93__" name="M_ALC" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_aIVA__91__c__93__" id="M_aIVA__91__c__93__" name="M_aIVA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Val__91__c__93__" id="M_Val__91__c__93__" name="M_Val" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Ala__91__c__93__" id="M_Ala__91__c__93__" name="M_Ala" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Leu__91__c__93__" id="M_Leu__91__c__93__" name="M_Leu" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_PRPP__91__c__93__" id="M_PRPP__91__c__93__" name="M_PRPP" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_His__91__c__93__" id="M_His__91__c__93__" name="M_His" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Cys__91__c__93__" id="M_Cys__91__c__93__" name="M_Cys" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Met__91__c__93__" id="M_Met__91__c__93__" name="M_Met" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Glyox__91__c__93__" id="M_Glyox__91__c__93__" name="M_Glyox" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Ethanol__91__c__93__" id="M_Ethanol__91__c__93__" name="M_Ethanol" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Form__40__e__41____91__c__93__" id="M_Form__40__e__41____91__c__93__" name="M_Form__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_H2__40__e__41____91__c__93__" id="M_H2__40__e__41____91__c__93__" name="M_H2__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_glycerol__45__P__91__c__93__" id="M_glycerol__45__P__91__c__93__" name="M_glycerol__45__P" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_glycerol__91__c__93__" id="M_glycerol__91__c__93__" name="M_glycerol" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_NH3__40__e__41____91__c__93__" id="M_NH3__40__e__41____91__c__93__" name="M_NH3__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_AcOH__40__e__41____91__c__93__" id="M_AcOH__40__e__41____91__c__93__" name="M_AcOH__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Lac__40__e__41____91__c__93__" id="M_Lac__40__e__41____91__c__93__" name="M_Lac__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_6PG__91__c__93__" id="M_6PG__91__c__93__" name="M_6PG" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Phospholipid__91__c__93__" id="M_Phospholipid__91__c__93__" name="M_Phospholipid" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Protein__91__c__93__" id="M_Protein__91__c__93__" name="M_Protein" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_LPS__91__c__93__" id="M_LPS__91__c__93__" name="M_LPS" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Peptidoglycan__91__c__93__" id="M_Peptidoglycan__91__c__93__" name="M_Peptidoglycan" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_DNA__91__c__93__" id="M_DNA__91__c__93__" name="M_DNA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_Glycogen__91__c__93__" id="M_Glycogen__91__c__93__" name="M_Glycogen" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_RNA__91__c__93__" id="M_RNA__91__c__93__" name="M_RNA" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_SO4__40__e__41____91__c__93__" id="M_SO4__40__e__41____91__c__93__" name="M_SO4__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_CO2__40__e__41____91__c__93__" id="M_CO2__40__e__41____91__c__93__" name="M_CO2__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="M_H2S__40__e__41____91__c__93__" id="M_H2S__40__e__41____91__c__93__" name="M_H2S__40__e__41__" compartment="c" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter sboTerm="SBO:0000626" id="FB1N1000" value="-1000" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="FB2N0" value="0" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="FB3N1000" value="1000" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction metaid="R_D1" id="R_D1" name="D1" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_SO4__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_APS__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D2" id="R_D2" name="D2" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_APS__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Cyt__45__C_red__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_SO3__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AMP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Cyt__45__C_ox__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D3" id="R_D3" name="D3" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Cyt__45__C_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_H2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_H__40__e__41____91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Cyt__45__C_red__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D4" id="R_D4" name="D4" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Fdx_ox__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Fdx_red__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D5" id="R_D5" name="D5" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Cyt__45__C_red__91__c__93__" stoichiometry="3" constant="true"/>
+          <speciesReference species="M_SO3__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_H__40__e__41____91__c__93__" stoichiometry="6" constant="true"/>
+          <speciesReference species="M_Cyt__45__C_ox__91__c__93__" stoichiometry="3" constant="true"/>
+          <speciesReference species="M_H2S__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D6" id="R_D6" name="D6" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Q__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_QH2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D7" id="R_D7" name="D7" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Fdx_red__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Q__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Fdx_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_QH2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D8" id="R_D8" name="D8" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Cyt__45__C_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_QH2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Cyt__45__C_red__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Q__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D9" id="R_D9" name="D9" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H__40__e__41____91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D10" id="R_D10" name="D10" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AMP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D11" id="R_D11" name="D11" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Fdx_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Lac__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Fdx_red__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D12" id="R_D12" name="D12" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Lac__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D13" id="R_D13" name="D13" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Fdx_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Fdx_red__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D14" id="R_D14" name="D14" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_G6P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D15" id="R_D15" name="D15" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_G6P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_6PGL__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D16" id="R_D16" name="D16" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_FBP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D17" id="R_D17" name="D17" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_FBP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D18" id="R_D18" name="D18" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_FBP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D19" id="R_D19" name="D19" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_R5P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_X5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Sed7P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D20" id="R_D20" name="D20" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Sed7P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_E4P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D21" id="R_D21" name="D21" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_X5P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_E4P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D22" id="R_D22" name="D22" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Ribu5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_R5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D23" id="R_D23" name="D23" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Ribu5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_X5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D24" id="R_D24" name="D24" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_3PG__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D25" id="R_D25" name="D25" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_3PG__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D26" id="R_D26" name="D26" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D27" id="R_D27" name="D27" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_AMP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D28" id="R_D28" name="D28" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_OAA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D29" id="R_D29" name="D29" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D30" id="R_D30" name="D30" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcOH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D31" id="R_D31" name="D31" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_OAA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Cit__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D32" id="R_D32" name="D32" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcOH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D33" id="R_D33" name="D33" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Cit__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Isocit__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D34" id="R_D34" name="D34" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Isocit__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D35" id="R_D35" name="D35" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_SucCoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Suc__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D36" id="R_D36" name="D36" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Suc__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_FAD__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_FADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Fum__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D37" id="R_D37" name="D37" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Fum__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Mal__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D38" id="R_D38" name="D38" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Mal__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D39" id="R_D39" name="D39" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D40" id="R_D40" name="D40" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D41" id="R_D41" name="D41" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D42" id="R_D42" name="D42" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_OAA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D43" id="R_D43" name="D43" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Asn__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D44" id="R_D44" name="D44" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ASA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D45" id="R_D45" name="D45" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ASA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_DDP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D46" id="R_D46" name="D46" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_DDP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_THDP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D47" id="R_D47" name="D47" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_SucCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_THDP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_SDAP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D48" id="R_D48" name="D48" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_SDAP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Suc__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_mDAP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D49" id="R_D49" name="D49" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_mDAP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Lys__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D50" id="R_D50" name="D50" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Pro__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D51" id="R_D51" name="D51" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="5" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="5" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Fum__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Arg__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D52" id="R_D52" name="D52" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ASA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Hse__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D53" id="R_D53" name="D53" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Thr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ile__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D54" id="R_D54" name="D54" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H4F__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ser__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_methylene__45__H4F__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Gly__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D55" id="R_D55" name="D55" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_methylene__45__H4F__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_H4F__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Form__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D56" id="R_D56" name="D56" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_H4F__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Gly__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_methylene__45__H4F__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D57" id="R_D57" name="D57" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_E4P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_SKA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D58" id="R_D58" name="D58" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_SKA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CHR__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D59" id="R_D59" name="D59" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_CHR__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_PPA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D60" id="R_D60" name="D60" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PPA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Tyr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_61" id="R_61" name="61" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PPA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Phe__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D62" id="R_D62" name="D62" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_R5P__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CHR__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ind__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D63" id="R_D63" name="D63" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Ser__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ind__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Trp__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D64" id="R_D64" name="D64" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ALC__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D65" id="R_D65" name="D65" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_ALC__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aIVA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D66" id="R_D66" name="D66" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aIVA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Val__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D67" id="R_D67" name="D67" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Val__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_aIVA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ala__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D68" id="R_D68" name="D68" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aIVA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Leu__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D69" id="R_D69" name="D69" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_R5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_AMP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PRPP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D70" id="R_D70" name="D70" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_PRPP__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_His__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D71" id="R_D71" name="D71" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H2S__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ser__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_AcOH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Cys__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D72" id="R_D72" name="D72" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_3PG__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Ser__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D73" id="R_D73" name="D73" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Hse__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Thr__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D74" id="R_D74" name="D74" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_SucCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Hse__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_methylene__45__H4F__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Cys__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Suc__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_H4F__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Met__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D75" id="R_D75" name="D75" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glyox__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Mal__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D76" id="R_D76" name="D76" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Pyr__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Form__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D77" id="R_D77" name="D77" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_Ethanol__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D78" id="R_D78" name="D78" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Cyt__45__C_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Form__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Cyt__45__C_red__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D79" id="R_D79" name="D79" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Form__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Form__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D80" id="R_D80" name="D80" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_H2__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D81" id="R_D81" name="D81" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_FADH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_FAD__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_glycerol__45__P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D82" id="R_D82" name="D82" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_glycerol__45__P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_glycerol__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D83" id="R_D83" name="D83" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NH3__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D84" id="R_D84" name="D84" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_AcOH__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_AcOH__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D85" id="R_D85" name="D85" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="0.5" constant="true"/>
+          <speciesReference species="M_Lac__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="0.5" constant="true"/>
+          <speciesReference species="M_Lac__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D86" id="R_D86" name="D86" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Fdx_ox__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_aKG__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_Fdx_red__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_SucCoA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D87" id="R_D87" name="D87" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_6PGL__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_6PG__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D88" id="R_D88" name="D88" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_6PG__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Ribu5P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D89" id="R_D89" name="D89" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Phospholipid__91__c__93__" stoichiometry="93.47" constant="true"/>
+          <speciesReference species="M_Protein__91__c__93__" stoichiometry="57.23" constant="true"/>
+          <speciesReference species="M_LPS__91__c__93__" stoichiometry="3.54" constant="true"/>
+          <speciesReference species="M_Peptidoglycan__91__c__93__" stoichiometry="2.6" constant="true"/>
+          <speciesReference species="M_DNA__91__c__93__" stoichiometry="3.23" constant="true"/>
+          <speciesReference species="M_Glycogen__91__c__93__" stoichiometry="2.6" constant="true"/>
+          <speciesReference species="M_RNA__91__c__93__" stoichiometry="21.33" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_D90" id="R_D90" name="D90" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="32.41" constant="true"/>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="3.09" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1.16" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="6.17" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="5.02" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="6.17" constant="true"/>
+          <speciesReference species="M_methylene__45__H4F__91__c__93__" stoichiometry="6.17" constant="true"/>
+          <speciesReference species="M_Gly__91__c__93__" stoichiometry="3.08" constant="true"/>
+          <speciesReference species="M_PRPP__91__c__93__" stoichiometry="3.47" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="3.09" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="32.41" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="6.17" constant="true"/>
+          <speciesReference species="M_Fum__91__c__93__" stoichiometry="3.47" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="5.02" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="3.86" constant="true"/>
+          <speciesReference species="M_H4F__91__c__93__" stoichiometry="6.17" constant="true"/>
+          <speciesReference species="M_RNA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D91" id="R_D91" name="D91" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="31.5" constant="true"/>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="3" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1.12" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="3.75" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="4.88" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="6" constant="true"/>
+          <speciesReference species="M_methylene__45__H4F__91__c__93__" stoichiometry="7.12" constant="true"/>
+          <speciesReference species="M_Gly__91__c__93__" stoichiometry="3" constant="true"/>
+          <speciesReference species="M_PRPP__91__c__93__" stoichiometry="3.37" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="3" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="31.5" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="3.75" constant="true"/>
+          <speciesReference species="M_Fum__91__c__93__" stoichiometry="3.37" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="4.88" constant="true"/>
+          <speciesReference species="M_NH3__91__c__93__" stoichiometry="3.75" constant="true"/>
+          <speciesReference species="M_H4F__91__c__93__" stoichiometry="7.12" constant="true"/>
+          <speciesReference species="M_DNA__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D92" id="R_D92" name="D92" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="44.2" constant="true"/>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="38.35" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="20.8" constant="true"/>
+          <speciesReference species="M_GAP__91__c__93__" stoichiometry="1.95" constant="true"/>
+          <speciesReference species="M_Ser__91__c__93__" stoichiometry="0.65" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="38.35" constant="true"/>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="44.2" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="0.65" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="20.8" constant="true"/>
+          <speciesReference species="M_Phospholipid__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D93" id="R_D93" name="D93" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="6.97" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="1.94" constant="true"/>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1.94" constant="true"/>
+          <speciesReference species="M_NADPH__91__c__93__" stoichiometry="0.97" constant="true"/>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="0.97" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="1.94" constant="true"/>
+          <speciesReference species="M_Lys__91__c__93__" stoichiometry="0.97" constant="true"/>
+          <speciesReference species="M_Ala__91__c__93__" stoichiometry="2.91" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="6.97" constant="true"/>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="0.97" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="1.94" constant="true"/>
+          <speciesReference species="M_NADP__91__c__93__" stoichiometry="0.97" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="1.94" constant="true"/>
+          <speciesReference species="M_Peptidoglycan__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D94" id="R_D94" name="D94" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="32.76" constant="true"/>
+          <speciesReference species="M_NADH__91__c__93__" stoichiometry="12.74" constant="true"/>
+          <speciesReference species="M_AcCoA__91__c__93__" stoichiometry="15.47" constant="true"/>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="0.91" constant="true"/>
+          <speciesReference species="M_R5P__91__c__93__" stoichiometry="0.91" constant="true"/>
+          <speciesReference species="M_PEP__91__c__93__" stoichiometry="0.91" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="0.91" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_NAD__91__c__93__" stoichiometry="12.74" constant="true"/>
+          <speciesReference species="M_CoA__91__c__93__" stoichiometry="15.47" constant="true"/>
+          <speciesReference species="M_AcOH__91__c__93__" stoichiometry="0.91" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="0.91" constant="true"/>
+          <speciesReference species="M_LPS__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D95" id="R_D95" name="D95" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="18" constant="true"/>
+          <speciesReference species="M_Glu__91__c__93__" stoichiometry="0.52" constant="true"/>
+          <speciesReference species="M_Gln__91__c__93__" stoichiometry="0.52" constant="true"/>
+          <speciesReference species="M_Asp__91__c__93__" stoichiometry="0.46" constant="true"/>
+          <speciesReference species="M_Asn__91__c__93__" stoichiometry="0.46" constant="true"/>
+          <speciesReference species="M_Lys__91__c__93__" stoichiometry="0.54" constant="true"/>
+          <speciesReference species="M_Pro__91__c__93__" stoichiometry="0.34" constant="true"/>
+          <speciesReference species="M_Arg__91__c__93__" stoichiometry="0.46" constant="true"/>
+          <speciesReference species="M_Thr__91__c__93__" stoichiometry="0.48" constant="true"/>
+          <speciesReference species="M_Ile__91__c__93__" stoichiometry="0.44" constant="true"/>
+          <speciesReference species="M_Ser__91__c__93__" stoichiometry="0.44" constant="true"/>
+          <speciesReference species="M_Gly__91__c__93__" stoichiometry="0.77" constant="true"/>
+          <speciesReference species="M_Tyr__91__c__93__" stoichiometry="0.26" constant="true"/>
+          <speciesReference species="M_Phe__91__c__93__" stoichiometry="0.3" constant="true"/>
+          <speciesReference species="M_Trp__91__c__93__" stoichiometry="0.01" constant="true"/>
+          <speciesReference species="M_Val__91__c__93__" stoichiometry="0.67" constant="true"/>
+          <speciesReference species="M_Ala__91__c__93__" stoichiometry="0.96" constant="true"/>
+          <speciesReference species="M_Leu__91__c__93__" stoichiometry="0.85" constant="true"/>
+          <speciesReference species="M_His__91__c__93__" stoichiometry="0.16" constant="true"/>
+          <speciesReference species="M_Cys__91__c__93__" stoichiometry="0.15" constant="true"/>
+          <speciesReference species="M_Met__91__c__93__" stoichiometry="0.22" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="18" constant="true"/>
+          <speciesReference species="M_Protein__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D96" id="R_D96" name="D96" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_ATP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_F6P__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_ADP__91__c__93__" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_Glycogen__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D97" id="R_D97" name="D97" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_SO4__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_SO4__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D98" id="R_D98" name="D98" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_CO2__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_CO2__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D99" id="R_D99" name="D99" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H2S__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_H2S__91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_EX_NH3" id="R_EX_NH3" name="EX_NH3" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_NH3__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_SO4" id="R_EX_SO4" name="EX_SO4" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_SO4__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_Lac" id="R_EX_Lac" name="EX_Lac" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Lac__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_AcOH" id="R_EX_AcOH" name="EX_AcOH" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_AcOH__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_H2" id="R_EX_H2" name="EX_H2" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H2__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_Form" id="R_EX_Form" name="EX_Form" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_Form__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_CO2" id="R_EX_CO2" name="EX_CO2" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_CO2__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_H" id="R_EX_H" name="EX_H" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_EX_H2S" id="R_EX_H2S" name="EX_H2S" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <listOfReactants>
+          <speciesReference species="M_H2S__40__e__41____91__c__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+    </listOfReactions>
+    <fbc:listOfObjectives fbc:activeObjective="obj">
+      <fbc:objective fbc:id="obj" fbc:type="maximize">
+        <fbc:listOfFluxObjectives>
+          <fbc:fluxObjective fbc:reaction="R_D89" fbc:coefficient="1"/>
+        </fbc:listOfFluxObjectives>
+      </fbc:objective>
+    </fbc:listOfObjectives>
+    <fbc:listOfGeneProducts>
+      <fbc:geneProduct metaid="G_D1" sboTerm="SBO:0000243" fbc:id="G_D1" fbc:name="D1" fbc:label="D1"/>
+      <fbc:geneProduct metaid="G_D2" sboTerm="SBO:0000243" fbc:id="G_D2" fbc:name="D2" fbc:label="D2"/>
+      <fbc:geneProduct metaid="G_D3" sboTerm="SBO:0000243" fbc:id="G_D3" fbc:name="D3" fbc:label="D3"/>
+      <fbc:geneProduct metaid="G_D4" sboTerm="SBO:0000243" fbc:id="G_D4" fbc:name="D4" fbc:label="D4"/>
+      <fbc:geneProduct metaid="G_D5" sboTerm="SBO:0000243" fbc:id="G_D5" fbc:name="D5" fbc:label="D5"/>
+      <fbc:geneProduct metaid="G_D6" sboTerm="SBO:0000243" fbc:id="G_D6" fbc:name="D6" fbc:label="D6"/>
+      <fbc:geneProduct metaid="G_D7" sboTerm="SBO:0000243" fbc:id="G_D7" fbc:name="D7" fbc:label="D7"/>
+      <fbc:geneProduct metaid="G_D8" sboTerm="SBO:0000243" fbc:id="G_D8" fbc:name="D8" fbc:label="D8"/>
+      <fbc:geneProduct metaid="G_D9" sboTerm="SBO:0000243" fbc:id="G_D9" fbc:name="D9" fbc:label="D9"/>
+      <fbc:geneProduct metaid="G_D10" sboTerm="SBO:0000243" fbc:id="G_D10" fbc:name="D10" fbc:label="D10"/>
+      <fbc:geneProduct metaid="G_D11" sboTerm="SBO:0000243" fbc:id="G_D11" fbc:name="D11" fbc:label="D11"/>
+      <fbc:geneProduct metaid="G_D12" sboTerm="SBO:0000243" fbc:id="G_D12" fbc:name="D12" fbc:label="D12"/>
+      <fbc:geneProduct metaid="G_D13" sboTerm="SBO:0000243" fbc:id="G_D13" fbc:name="D13" fbc:label="D13"/>
+      <fbc:geneProduct metaid="G_D14" sboTerm="SBO:0000243" fbc:id="G_D14" fbc:name="D14" fbc:label="D14"/>
+      <fbc:geneProduct metaid="G_D15" sboTerm="SBO:0000243" fbc:id="G_D15" fbc:name="D15" fbc:label="D15"/>
+      <fbc:geneProduct metaid="G_D16" sboTerm="SBO:0000243" fbc:id="G_D16" fbc:name="D16" fbc:label="D16"/>
+      <fbc:geneProduct metaid="G_D17" sboTerm="SBO:0000243" fbc:id="G_D17" fbc:name="D17" fbc:label="D17"/>
+      <fbc:geneProduct metaid="G_D18" sboTerm="SBO:0000243" fbc:id="G_D18" fbc:name="D18" fbc:label="D18"/>
+      <fbc:geneProduct metaid="G_D19" sboTerm="SBO:0000243" fbc:id="G_D19" fbc:name="D19" fbc:label="D19"/>
+      <fbc:geneProduct metaid="G_D20" sboTerm="SBO:0000243" fbc:id="G_D20" fbc:name="D20" fbc:label="D20"/>
+      <fbc:geneProduct metaid="G_D21" sboTerm="SBO:0000243" fbc:id="G_D21" fbc:name="D21" fbc:label="D21"/>
+      <fbc:geneProduct metaid="G_D22" sboTerm="SBO:0000243" fbc:id="G_D22" fbc:name="D22" fbc:label="D22"/>
+      <fbc:geneProduct metaid="G_D23" sboTerm="SBO:0000243" fbc:id="G_D23" fbc:name="D23" fbc:label="D23"/>
+      <fbc:geneProduct metaid="G_D24" sboTerm="SBO:0000243" fbc:id="G_D24" fbc:name="D24" fbc:label="D24"/>
+      <fbc:geneProduct metaid="G_D25" sboTerm="SBO:0000243" fbc:id="G_D25" fbc:name="D25" fbc:label="D25"/>
+      <fbc:geneProduct metaid="G_D26" sboTerm="SBO:0000243" fbc:id="G_D26" fbc:name="D26" fbc:label="D26"/>
+      <fbc:geneProduct metaid="G_D27" sboTerm="SBO:0000243" fbc:id="G_D27" fbc:name="D27" fbc:label="D27"/>
+      <fbc:geneProduct metaid="G_D28" sboTerm="SBO:0000243" fbc:id="G_D28" fbc:name="D28" fbc:label="D28"/>
+      <fbc:geneProduct metaid="G_D29" sboTerm="SBO:0000243" fbc:id="G_D29" fbc:name="D29" fbc:label="D29"/>
+      <fbc:geneProduct metaid="G_D30" sboTerm="SBO:0000243" fbc:id="G_D30" fbc:name="D30" fbc:label="D30"/>
+      <fbc:geneProduct metaid="G_D31" sboTerm="SBO:0000243" fbc:id="G_D31" fbc:name="D31" fbc:label="D31"/>
+      <fbc:geneProduct metaid="G_D32" sboTerm="SBO:0000243" fbc:id="G_D32" fbc:name="D32" fbc:label="D32"/>
+      <fbc:geneProduct metaid="G_D33" sboTerm="SBO:0000243" fbc:id="G_D33" fbc:name="D33" fbc:label="D33"/>
+      <fbc:geneProduct metaid="G_D34" sboTerm="SBO:0000243" fbc:id="G_D34" fbc:name="D34" fbc:label="D34"/>
+      <fbc:geneProduct metaid="G_D35" sboTerm="SBO:0000243" fbc:id="G_D35" fbc:name="D35" fbc:label="D35"/>
+      <fbc:geneProduct metaid="G_D36" sboTerm="SBO:0000243" fbc:id="G_D36" fbc:name="D36" fbc:label="D36"/>
+      <fbc:geneProduct metaid="G_D37" sboTerm="SBO:0000243" fbc:id="G_D37" fbc:name="D37" fbc:label="D37"/>
+      <fbc:geneProduct metaid="G_D38" sboTerm="SBO:0000243" fbc:id="G_D38" fbc:name="D38" fbc:label="D38"/>
+      <fbc:geneProduct metaid="G_D39" sboTerm="SBO:0000243" fbc:id="G_D39" fbc:name="D39" fbc:label="D39"/>
+      <fbc:geneProduct metaid="G_D40" sboTerm="SBO:0000243" fbc:id="G_D40" fbc:name="D40" fbc:label="D40"/>
+      <fbc:geneProduct metaid="G_D41" sboTerm="SBO:0000243" fbc:id="G_D41" fbc:name="D41" fbc:label="D41"/>
+      <fbc:geneProduct metaid="G_D42" sboTerm="SBO:0000243" fbc:id="G_D42" fbc:name="D42" fbc:label="D42"/>
+      <fbc:geneProduct metaid="G_D43" sboTerm="SBO:0000243" fbc:id="G_D43" fbc:name="D43" fbc:label="D43"/>
+      <fbc:geneProduct metaid="G_D44" sboTerm="SBO:0000243" fbc:id="G_D44" fbc:name="D44" fbc:label="D44"/>
+      <fbc:geneProduct metaid="G_D45" sboTerm="SBO:0000243" fbc:id="G_D45" fbc:name="D45" fbc:label="D45"/>
+      <fbc:geneProduct metaid="G_D46" sboTerm="SBO:0000243" fbc:id="G_D46" fbc:name="D46" fbc:label="D46"/>
+      <fbc:geneProduct metaid="G_D47" sboTerm="SBO:0000243" fbc:id="G_D47" fbc:name="D47" fbc:label="D47"/>
+      <fbc:geneProduct metaid="G_D48" sboTerm="SBO:0000243" fbc:id="G_D48" fbc:name="D48" fbc:label="D48"/>
+      <fbc:geneProduct metaid="G_D49" sboTerm="SBO:0000243" fbc:id="G_D49" fbc:name="D49" fbc:label="D49"/>
+      <fbc:geneProduct metaid="G_D50" sboTerm="SBO:0000243" fbc:id="G_D50" fbc:name="D50" fbc:label="D50"/>
+      <fbc:geneProduct metaid="G_D51" sboTerm="SBO:0000243" fbc:id="G_D51" fbc:name="D51" fbc:label="D51"/>
+      <fbc:geneProduct metaid="G_D52" sboTerm="SBO:0000243" fbc:id="G_D52" fbc:name="D52" fbc:label="D52"/>
+      <fbc:geneProduct metaid="G_D53" sboTerm="SBO:0000243" fbc:id="G_D53" fbc:name="D53" fbc:label="D53"/>
+      <fbc:geneProduct metaid="G_D54" sboTerm="SBO:0000243" fbc:id="G_D54" fbc:name="D54" fbc:label="D54"/>
+      <fbc:geneProduct metaid="G_D55" sboTerm="SBO:0000243" fbc:id="G_D55" fbc:name="D55" fbc:label="D55"/>
+      <fbc:geneProduct metaid="G_D56" sboTerm="SBO:0000243" fbc:id="G_D56" fbc:name="D56" fbc:label="D56"/>
+      <fbc:geneProduct metaid="G_D57" sboTerm="SBO:0000243" fbc:id="G_D57" fbc:name="D57" fbc:label="D57"/>
+      <fbc:geneProduct metaid="G_D58" sboTerm="SBO:0000243" fbc:id="G_D58" fbc:name="D58" fbc:label="D58"/>
+      <fbc:geneProduct metaid="G_D59" sboTerm="SBO:0000243" fbc:id="G_D59" fbc:name="D59" fbc:label="D59"/>
+      <fbc:geneProduct metaid="G_D60" sboTerm="SBO:0000243" fbc:id="G_D60" fbc:name="D60" fbc:label="D60"/>
+      <fbc:geneProduct metaid="G_61" sboTerm="SBO:0000243" fbc:id="G_61" fbc:name="61" fbc:label="61"/>
+      <fbc:geneProduct metaid="G_D62" sboTerm="SBO:0000243" fbc:id="G_D62" fbc:name="D62" fbc:label="D62"/>
+      <fbc:geneProduct metaid="G_D63" sboTerm="SBO:0000243" fbc:id="G_D63" fbc:name="D63" fbc:label="D63"/>
+      <fbc:geneProduct metaid="G_D64" sboTerm="SBO:0000243" fbc:id="G_D64" fbc:name="D64" fbc:label="D64"/>
+      <fbc:geneProduct metaid="G_D65" sboTerm="SBO:0000243" fbc:id="G_D65" fbc:name="D65" fbc:label="D65"/>
+      <fbc:geneProduct metaid="G_D66" sboTerm="SBO:0000243" fbc:id="G_D66" fbc:name="D66" fbc:label="D66"/>
+      <fbc:geneProduct metaid="G_D67" sboTerm="SBO:0000243" fbc:id="G_D67" fbc:name="D67" fbc:label="D67"/>
+      <fbc:geneProduct metaid="G_D68" sboTerm="SBO:0000243" fbc:id="G_D68" fbc:name="D68" fbc:label="D68"/>
+      <fbc:geneProduct metaid="G_D69" sboTerm="SBO:0000243" fbc:id="G_D69" fbc:name="D69" fbc:label="D69"/>
+      <fbc:geneProduct metaid="G_D70" sboTerm="SBO:0000243" fbc:id="G_D70" fbc:name="D70" fbc:label="D70"/>
+      <fbc:geneProduct metaid="G_D71" sboTerm="SBO:0000243" fbc:id="G_D71" fbc:name="D71" fbc:label="D71"/>
+      <fbc:geneProduct metaid="G_D72" sboTerm="SBO:0000243" fbc:id="G_D72" fbc:name="D72" fbc:label="D72"/>
+      <fbc:geneProduct metaid="G_D73" sboTerm="SBO:0000243" fbc:id="G_D73" fbc:name="D73" fbc:label="D73"/>
+      <fbc:geneProduct metaid="G_D74" sboTerm="SBO:0000243" fbc:id="G_D74" fbc:name="D74" fbc:label="D74"/>
+      <fbc:geneProduct metaid="G_D75" sboTerm="SBO:0000243" fbc:id="G_D75" fbc:name="D75" fbc:label="D75"/>
+      <fbc:geneProduct metaid="G_D76" sboTerm="SBO:0000243" fbc:id="G_D76" fbc:name="D76" fbc:label="D76"/>
+      <fbc:geneProduct metaid="G_D77" sboTerm="SBO:0000243" fbc:id="G_D77" fbc:name="D77" fbc:label="D77"/>
+      <fbc:geneProduct metaid="G_D78" sboTerm="SBO:0000243" fbc:id="G_D78" fbc:name="D78" fbc:label="D78"/>
+      <fbc:geneProduct metaid="G_D79" sboTerm="SBO:0000243" fbc:id="G_D79" fbc:name="D79" fbc:label="D79"/>
+      <fbc:geneProduct metaid="G_D80" sboTerm="SBO:0000243" fbc:id="G_D80" fbc:name="D80" fbc:label="D80"/>
+      <fbc:geneProduct metaid="G_D81" sboTerm="SBO:0000243" fbc:id="G_D81" fbc:name="D81" fbc:label="D81"/>
+      <fbc:geneProduct metaid="G_D82" sboTerm="SBO:0000243" fbc:id="G_D82" fbc:name="D82" fbc:label="D82"/>
+      <fbc:geneProduct metaid="G_D83" sboTerm="SBO:0000243" fbc:id="G_D83" fbc:name="D83" fbc:label="D83"/>
+      <fbc:geneProduct metaid="G_D84" sboTerm="SBO:0000243" fbc:id="G_D84" fbc:name="D84" fbc:label="D84"/>
+      <fbc:geneProduct metaid="G_D85" sboTerm="SBO:0000243" fbc:id="G_D85" fbc:name="D85" fbc:label="D85"/>
+      <fbc:geneProduct metaid="G_D86" sboTerm="SBO:0000243" fbc:id="G_D86" fbc:name="D86" fbc:label="D86"/>
+      <fbc:geneProduct metaid="G_D87" sboTerm="SBO:0000243" fbc:id="G_D87" fbc:name="D87" fbc:label="D87"/>
+      <fbc:geneProduct metaid="G_D88" sboTerm="SBO:0000243" fbc:id="G_D88" fbc:name="D88" fbc:label="D88"/>
+      <fbc:geneProduct metaid="G_D89" sboTerm="SBO:0000243" fbc:id="G_D89" fbc:name="D89" fbc:label="D89"/>
+      <fbc:geneProduct metaid="G_D90" sboTerm="SBO:0000243" fbc:id="G_D90" fbc:name="D90" fbc:label="D90"/>
+      <fbc:geneProduct metaid="G_D91" sboTerm="SBO:0000243" fbc:id="G_D91" fbc:name="D91" fbc:label="D91"/>
+      <fbc:geneProduct metaid="G_D92" sboTerm="SBO:0000243" fbc:id="G_D92" fbc:name="D92" fbc:label="D92"/>
+      <fbc:geneProduct metaid="G_D93" sboTerm="SBO:0000243" fbc:id="G_D93" fbc:name="D93" fbc:label="D93"/>
+      <fbc:geneProduct metaid="G_D94" sboTerm="SBO:0000243" fbc:id="G_D94" fbc:name="D94" fbc:label="D94"/>
+      <fbc:geneProduct metaid="G_D95" sboTerm="SBO:0000243" fbc:id="G_D95" fbc:name="D95" fbc:label="D95"/>
+      <fbc:geneProduct metaid="G_D96" sboTerm="SBO:0000243" fbc:id="G_D96" fbc:name="D96" fbc:label="D96"/>
+      <fbc:geneProduct metaid="G_D97" sboTerm="SBO:0000243" fbc:id="G_D97" fbc:name="D97" fbc:label="D97"/>
+      <fbc:geneProduct metaid="G_D98" sboTerm="SBO:0000243" fbc:id="G_D98" fbc:name="D98" fbc:label="D98"/>
+      <fbc:geneProduct metaid="G_D99" sboTerm="SBO:0000243" fbc:id="G_D99" fbc:name="D99" fbc:label="D99"/>
+      <fbc:geneProduct metaid="G_EX_NH3" sboTerm="SBO:0000243" fbc:id="G_EX_NH3" fbc:name="EX_NH3" fbc:label="EX_NH3"/>
+      <fbc:geneProduct metaid="G_EX_SO4" sboTerm="SBO:0000243" fbc:id="G_EX_SO4" fbc:name="EX_SO4" fbc:label="EX_SO4"/>
+      <fbc:geneProduct metaid="G_EX_Lac" sboTerm="SBO:0000243" fbc:id="G_EX_Lac" fbc:name="EX_Lac" fbc:label="EX_Lac"/>
+      <fbc:geneProduct metaid="G_EX_AcOH" sboTerm="SBO:0000243" fbc:id="G_EX_AcOH" fbc:name="EX_AcOH" fbc:label="EX_AcOH"/>
+      <fbc:geneProduct metaid="G_EX_H2" sboTerm="SBO:0000243" fbc:id="G_EX_H2" fbc:name="EX_H2" fbc:label="EX_H2"/>
+      <fbc:geneProduct metaid="G_EX_Form" sboTerm="SBO:0000243" fbc:id="G_EX_Form" fbc:name="EX_Form" fbc:label="EX_Form"/>
+      <fbc:geneProduct metaid="G_EX_CO2" sboTerm="SBO:0000243" fbc:id="G_EX_CO2" fbc:name="EX_CO2" fbc:label="EX_CO2"/>
+      <fbc:geneProduct metaid="G_EX_H" sboTerm="SBO:0000243" fbc:id="G_EX_H" fbc:name="EX_H" fbc:label="EX_H"/>
+      <fbc:geneProduct metaid="G_EX_H2S" sboTerm="SBO:0000243" fbc:id="G_EX_H2S" fbc:name="EX_H2S" fbc:label="EX_H2S"/>
+    </fbc:listOfGeneProducts>
+  </model>
+</sbml>
