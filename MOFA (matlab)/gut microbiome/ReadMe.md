@@ -1,1 +1,6 @@
+# MOFA: Microbial Optimization without Forced Altruism 
+
+**Gut microbiome species:**
+- For gut microbiome species, the Python code `MOFA-Gut-Microbiome.py` uses the files `S_human1.xlsx`, `S_human2.xlsx`, and so on, which are located in the zipped folder. The biomass ID should be updated for each community.
+  All results for this community can be found in `OurResult.xlsx`.
 
