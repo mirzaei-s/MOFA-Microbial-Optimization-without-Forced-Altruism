@@ -20,6 +20,10 @@ This folder contains the MOFA implementation for **Desulfovibrio vulgaris** and 
 - All results of MOFA for this community are saved in `OurResult.xlsx`.
 
 #
+**Toy Model:**  
+   Use the metabolic network files `organism_Q_sbml.xml` and `organism_P_sbml.xml` with the notebook `MOFA_toymodel.ipynb`.
+
+#
 
 ### MOFA Folder
 - Contains `MOFA.py`, a version of the MOFA algorithm that users can apply to their own models. A `ReadMe.pdf` file is also included, providing step-by-step instructions for users who want to apply MOFA to their own models.
