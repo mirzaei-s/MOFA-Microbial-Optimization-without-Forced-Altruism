@@ -19,6 +19,12 @@ This folder contains the MOFA implementation for **Desulfovibrio vulgaris** and 
 
 - All results of MOFA for this community are saved in `OurResult.xlsx`.
 
+#
+
 ### MOFA Folder
 - Contains `MOFA.py`, a version of the MOFA algorithm that users can apply to their own models. A `ReadMe.pdf` file is also included, providing step-by-step instructions for users who want to apply MOFA to their own models.
 
+#
+
+### MOFA(matlab)
+- This folder contains the MOFA version in which the model-merging function is implemented in MATLAB. To use this implementation, you need to upload the `.S` file, which is an Excel output representing the merged metabolic network of the community model returned from MATLAB to the `.ipynb` notebook.
