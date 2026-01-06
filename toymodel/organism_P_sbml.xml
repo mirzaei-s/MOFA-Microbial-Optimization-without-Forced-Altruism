@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created on: 21/09/2010 15:24:39-->
+<sbml xmlns="http://www.sbml.org/sbml/level2" xmlns:html="http://www.w3.org/1999/xhtml" level="2" version="1">
+	<model id="OrgP" name="Organism_P">
+		<annotation xmlns="">
+			<fba:fluxBalance xmlns:fba="http://www.sbml.org/sbml/level3/version1/fba/version1">
+				<fba:listOfConstraints>
+				    <fba:constraint fba:reaction="R_EX_glu_e_" fba:operation="greater" fba:value="-1.0" />
+					<fba:constraint fba:reaction="R_EX_glu_e_" fba:operation="less" fba:value="0" />
+					<fba:constraint fba:reaction="R_EX_nh3_e_" fba:operation="greater" fba:value="-999999" />
+					<fba:constraint fba:reaction="R_EX_nh3_e_" fba:operation="less" fba:value="0" />
+					<fba:constraint fba:reaction="R_EX_succ_e_" fba:operation="greater" fba:value="-999999" />
+					<fba:constraint fba:reaction="R_EX_succ_e_" fba:operation="less" fba:value="999999" />
+					<fba:constraint fba:reaction="R_GLUtransport" fba:operation="greater" fba:value="-999999" />
+					<fba:constraint fba:reaction="R_GLUtransport" fba:operation="less" fba:value="0" />
+					<fba:constraint fba:reaction="R_NH3transport" fba:operation="greater" fba:value="-999999" />
+					<fba:constraint fba:reaction="R_NH3transport" fba:operation="less" fba:value="0" />
+					<fba:constraint fba:reaction="R_SUCCtransport" fba:operation="greater" fba:value="0" />
+					<fba:constraint fba:reaction="R_SUCCtransport" fba:operation="less" fba:value="999999" />
+					<fba:constraint fba:reaction="R_CATA" fba:operation="greater" fba:value="0" />
+					<fba:constraint fba:reaction="R_CATA" fba:operation="less" fba:value="999999" />
+					<fba:constraint fba:reaction="R_RES" fba:operation="greater" fba:value="0" />
+					<fba:constraint fba:reaction="R_RES" fba:operation="less" fba:value="999999" />
+					<fba:constraint fba:reaction="R_SUCCprod" fba:operation="greater" fba:value="0" />
+					<fba:constraint fba:reaction="R_SUCCprod" fba:operation="less" fba:value="999999" />
+				</fba:listOfConstraints>
+				<fba:listOfObjectives fba:activeObjective="obj1">
+					<fba:objective id="obj1" fba:type="maximize">
+						<fba:listOfFluxes>
+							<fba:fluxObjective fba:reaction="R_biomass_OrgP" fba:coefficient="1" />
+						</fba:listOfFluxes>
+					</fba:objective>
+				</fba:listOfObjectives>
+			</fba:fluxBalance>
+		</annotation>
+		<listOfUnitDefinitions>
+			<unitDefinition id="mmol_per_gDW_per_hr">
+				<listOfUnits>
+					<unit kind="mole" scale="-3" />
+					<unit kind="gram" exponent="-1" />
+					<unit kind="second" exponent="-1" multiplier="0.00027777" />
+				</listOfUnits>
+			</unitDefinition>
+		</listOfUnitDefinitions>
+		<listOfCompartments>
+			<compartment id="Extra_organism" />
+			<compartment id="Cytosol" outside="Extra_organism" />
+		</listOfCompartments>
+		<listOfSpecies>
+		    <species id="M_glu_b" name="M_glucose_boundary_" compartment="Extra_organism" boundaryCondition="true" charge="0" />
+			<species id="M_glu_e" name="M_glucose_external_" compartment="Extra_organism" charge="0" />
+			<species id="M_glu_c" name="M_glucose_cytosolic_" compartment="Cytosol" charge="0" />
+			<species id="M_nh3_b" name="M_ammonia_boundary_" compartment="Extra_organism" boundaryCondition="true" charge="0" />
+			<species id="M_nh3_e" name="M_ammonia_external_" compartment="Extra_organism" charge="0" />
+			<species id="M_nh3_c" name="M_ammonia_cytosolic_" compartment="Cytosol" charge="0" />
+			<species id="M_succ_b" name="M_succinate_boundary_" compartment="Extra_organism" boundaryCondition="true" charge="0" />
+			<species id="M_succ_e" name="M_succinate_external_" compartment="Extra_organism" charge="0" />
+			<species id="M_succ_c" name="M_glucose_cytosolic_" compartment="Cytosol" charge="0" />
+			<species id="M_atp_c" name="M_ATP_" compartment="Cytosol" charge="0" />
+			<species id="M_nadh_c" name="M_Nicotinamide_adenine_dinucleotide___reduced_" compartment="Cytosol" charge="0" />
+		</listOfSpecies>
+		<listOfReactions>
+			<reaction id="R_EX_glu_e_" name="glucose Exchange">
+				<notes>
+					<html:p>Abbreviation: R_EX_glu_e</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : glucose_external &lt;==&gt;</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_glu_e" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_glu_b" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_EX_nh3_e_" name="ammonia exchange">
+				<notes>
+					<html:p>Abbreviation: R_EX_nh3_e</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : ammonia_external &lt;==&gt;</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_nh3_e" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_nh3_b" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_EX_succ_e_" name="succinate exchange">
+				<notes>
+					<html:p>Abbreviation: R_EX_succ_e</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : succ_external &lt;==&gt;</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_succ_e" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_succ_b" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_GLUtransport" name="glucose transport">
+				<notes>
+					<html:p>Abbreviation: R_GLUtransport</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : glucose_external &lt;==&gt; glucose_cytosolic</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_glu_c" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_glu_e" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_NH3transport" name="ammonia transport">
+				<notes>
+					<html:p>Abbreviation: R_NH3transport</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : ammonia_external &lt;==&gt; ammonia_cytosolic</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_nh3_c" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_nh3_e" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_SUCCtransport" name="succinate transport">
+				<notes>
+					<html:p>Abbreviation: R_SUCCtransport</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : succinate_cytosolic &lt;==&gt; succinate_external</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_succ_c" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_succ_e" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_CATA" name="catabolism organis P">
+				<notes>
+					<html:p>Abbreviation: R_CATA</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : glucose_cytosolic &lt;==&gt; 2 M_nadh_c + 0.67 M_atp_c</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_glu_c" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_nadh_c" stoichiometry="2" />
+					<speciesReference species="M_atp_c" stoichiometry="0.67" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_RES" name="respiration organis P">
+				<notes>
+					<html:p>Abbreviation: R_RES</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : M_nadh_c &lt;==&gt; 3 M_atp_c</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_nadh_c" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_atp_c" stoichiometry="3" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_SUCCprod" name="succinate production">
+				<notes>
+					<html:p>Abbreviation: R_SUCCprod</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : M_glu_c &lt;==&gt; 0.66 M_succ_c + 0.33 M_atp_c + 0.66 M_nadh_c</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_glu_c" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_succ_c" stoichiometry="0.66" />
+					<speciesReference species="M_nadh_c" stoichiometry="0.66" />
+					<speciesReference species="M_atp_c" stoichiometry="0.33" />
+				</listOfProducts>
+			</reaction>
+			<reaction id="R_biomass_OrgP" name="Biomass Production - growth rate" reversible="false">
+				<notes>
+					<html:p>Abbreviation: R_SUCCprod</html:p>
+					<html:p>Synonyms: _0</html:p>
+					<html:p>Equation: [e] : 1.1 M_glu_c + 0.2 M_nh3_c + 2.5 M_atp_c &lt;==&gt; M_biomass_orgP + 0.1 M_nadh_c</html:p>
+					<html:p>Confidence Level: </html:p>
+					<html:p>genes:</html:p>
+					<html:p>none</html:p>
+					<html:p>proteins:</html:p>
+					<html:p>none</html:p>
+					<html:p>GENE ASSOCIATION: </html:p>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="M_glu_c" stoichiometry="1.1" />
+					<speciesReference species="M_nh3_c" stoichiometry="0.2" />
+					<speciesReference species="M_atp_c" stoichiometry="2.5" />
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="M_nadh_c" stoichiometry="0.1" />
+				</listOfProducts>
+			</reaction>
+		</listOfReactions>
+	</model>
+</sbml>
