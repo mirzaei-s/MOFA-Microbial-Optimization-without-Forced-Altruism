@@ -6,6 +6,14 @@ This repository contains a Python implementation of MOFA (Microbial Optimization
 
 The goal of this project is to model and optimize the growth of microbial communities by merging individual species' metabolic networks and applying nonlinear optimization to predict community behavior. MOFA allows the study of microbial interactions without imposing artificial constraints on altruistic behavior.
 
+This MOFA implementation provides a complete workflow for microbial community modeling:
+
+1. **Reading metabolic networks**: Import models in `.smbl` or `.mat` formats.
+2. **Merging species networks**: The function `add_model_to_community()` combines individual species' metabolic networks to create a comprehensive community model.
+3. **Setting the diet**: Apply specific environmental conditions or nutrient uptake rates to the community.
+4. **Running MOFA optimization**: Solve the nonlinear optimization problem to determine community growth rates and flux distributions.
+
+
 #
 
 ### DV&MM Folder
